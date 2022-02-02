@@ -1,4 +1,4 @@
-FROM node:17-alpine
+FROM docker.pkg.github.com/zendesk/dockerhub-images/node:17-alpine
 
 ADD package.json package-lock.json /action/
 RUN cd /action && npm ci
